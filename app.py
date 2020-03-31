@@ -9,15 +9,11 @@ def createApp():
     return app
 
 def connectInflux():
-    client = InfluxDBClient(host='34.246.184.109', port=8086, database='BinBotStats')
+    client = InfluxDBClient(host='localhost', port=8086, database='BinBotStats')
     return client
 
 app = createApp()
 db = connectInflux()
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
 
 @app.route('/')
 def hello_world():
@@ -50,3 +46,6 @@ def batLevel():
 
     return "Error"
 
+
+if __name__ == '__main__':
+        app.run(host="0.0.0.0",debug=True)

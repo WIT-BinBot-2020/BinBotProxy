@@ -40,3 +40,13 @@ def piStats():
             usageData.append(dataPoint)
 
     return make_response(jsonify(usageData))
+
+@app.route('/batLevel')
+def batLevel():
+    command = 'SELECT level from batLevel ORDER BY DESC LIMIT 1'
+    data = db.query(command)
+    for items in data:
+        return make_response(jsonify(items[0]))
+
+    return "Error"
+

@@ -1,0 +1,11 @@
+[Unit]
+Description=Proxy to access data from the database
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/BinBotProxy/app.py
+Restart=on-failure
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=default.target

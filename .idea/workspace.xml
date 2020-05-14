@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd316a7-f2cf-4792-8d51-d09fde35453e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -46,6 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyTBackendService" />
   </component>
   <component name="RunManager">
     <configuration name="binbotproxy" type="Python.FlaskServer">
@@ -74,7 +74,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585672238923</updated>
-      <workItem from="1585672288607" duration="5288000" />
+      <workItem from="1585672288607" duration="6975000" />
+      <workItem from="1588839582726" duration="26000" />
+      <workItem from="1589462186771" duration="2154000" />
     </task>
     <servers />
   </component>
@@ -86,28 +88,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585673749480" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585674235079">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585684871990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585674235079" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1585681223567">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585684871990" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588839606292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585681223567" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1585681223566">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588839606292" />
+    <state width="1877" height="376" key="GridCell.Tab.0.bottom" timestamp="1589464607606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585681223566" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1585681223566">
+    <state width="1877" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589464607606" />
+    <state width="1877" height="376" key="GridCell.Tab.0.center" timestamp="1589464607605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585681223566" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1585681223566">
+    <state width="1877" height="376" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589464607605" />
+    <state width="1877" height="376" key="GridCell.Tab.0.left" timestamp="1589464607605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585681223566" />
+    <state width="1877" height="376" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589464607605" />
+    <state width="1877" height="376" key="GridCell.Tab.0.right" timestamp="1589464607606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589464607606" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/binbotproxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1585681223517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/binbotproxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1589464607586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

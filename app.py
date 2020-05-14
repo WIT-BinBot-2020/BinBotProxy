@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, make_response
+from flask import Flask, jsonify, make_response, request
 from flask_cors import CORS
 from influxdb import InfluxDBClient
 import json
@@ -9,7 +9,7 @@ def createApp():
     return app
 
 def connectInflux():
-    client = InfluxDBClient(host='34.246.184.109', port=8086, database='BinBotStats')
+    client = InfluxDBClient(host='52.19.82.33', port=8086, database='BinBotStats', username='binbot', password='b33pb00p!!')
     return client
 
 app = createApp()
@@ -26,7 +26,13 @@ def hello_world():
 
 @app.route('/piStats')
 def piStats():
-    command = 'SELECT cpu, disk, ram from piSystemUsage'
+    timeRange = request.args.get('range')
+
+    if timeRange is None:
+        timeRange = 30
+
+    command = 'SELECT cpu, disk, ram FROM piSystemUsage WHERE time > now() - ' + str(timeRange) + 'd'
+    print(command)
     data = db.query(command)
     usageData = []
     for items in data:

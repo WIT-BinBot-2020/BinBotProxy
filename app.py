@@ -27,6 +27,9 @@ def piStats():
     if timeRange is None:
         timeRange = 30
 
+    if not timeRange.isnumeric():
+        timeRange = 30
+
     command = 'SELECT cpu, disk, ram FROM piSystemUsage WHERE time > now() - ' + str(timeRange) + 'd'
     print(command)
     data = db.query(command)

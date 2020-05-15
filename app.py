@@ -52,6 +52,20 @@ def batLevel():
 
     return "Error"
 
+@app.route('/recentMessages')
+def recentMessages():
+    command = 'SELECT message from messages ORDER BY DESC LIMIT 5'
+    data = db.query(command)
+    messageData = []
+    for items in data:
+        for item in items:
+            dataPoint = {
+                "message": item["message"]
+            }
+            messageData.append(dataPoint)
+
+    return make_response(jsonify(messageData))
+
 
 if __name__ == '__main__':
         app.run(host="0.0.0.0",debug=True)

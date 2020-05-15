@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd316a7-f2cf-4792-8d51-d09fde35453e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/binBotProxy.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/binbotproxy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/binbotproxy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyTBackendService" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="binbotproxy" type="Python.FlaskServer">
@@ -77,6 +80,7 @@
       <workItem from="1585672288607" duration="6975000" />
       <workItem from="1588839582726" duration="26000" />
       <workItem from="1589462186771" duration="2431000" />
+      <workItem from="1589571386070" duration="981000" />
     </task>
     <servers />
   </component>
@@ -112,8 +116,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="376" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589464607606" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1589573157770">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589573157770" />
+    <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589571580502" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BinBotProxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1589573231172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/binbotproxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1589464607586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

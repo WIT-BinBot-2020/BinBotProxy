@@ -27,7 +27,7 @@ def piStats():
     if timeRange is None:
         timeRange = 30
 
-    if not timeRange.isnumeric():
+    if not str(timeRange).isnumeric():
         timeRange = 30
 
     command = 'SELECT cpu, disk, ram FROM piSystemUsage WHERE time > now() - ' + str(timeRange) + 'd'
@@ -69,6 +69,24 @@ def recentMessages():
 
     return make_response(jsonify(messageData))
 
+# @app.route('/ select * from micanglearrival')
+@app.route('/micAngleArrival')
+def micAngleArrival():
+    timeRange = request.args.get('range')
+
+    if timeRange is None:
+        timeRange = 1
+
+    if not str(timeRange).isnumeric():
+        timeRange = 1
+
+    command = 'SELECT mic_direction_of_arrival from micanglearrival WHERE time > now() - ' + str(timeRange) + 'd'
+    data = db.query(command)
+    for items in data:
+        dataPoint = {
+            "angles": items
+        }
+        return make_response(jsonify(dataPoint))
 
 if __name__ == '__main__':
         app.run(host="0.0.0.0",debug=True)

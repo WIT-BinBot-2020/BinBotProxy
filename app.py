@@ -102,7 +102,7 @@ def micAngleArrival():
     if not str(timeRangeMinutes).isnumeric():
         timeRangeMinutes = 0
 
-    command = 'SELECT mic_direction_of_arrival from micanglearrival WHERE time > now() - ' + str(timeRangeDays) + 'd - ' \
+    command = 'SELECT mic_direction_of_arrival from micAngleArrival WHERE time > now() - ' + str(timeRangeDays) + 'd - ' \
               + str(timeRangeHours) + 'h - ' + str(timeRangeMinutes) + 'm'
     print(command)
     data = db.query(command)

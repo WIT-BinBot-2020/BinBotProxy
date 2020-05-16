@@ -22,15 +22,27 @@ def hello_world():
 
 @app.route('/piStats')
 def piStats():
-    timeRange = request.args.get('range')
+    timeRangeDays = request.args.get('rangeDays')
+    timeRangeHours = request.args.get('rangeHours')
+    timeRangeMinutes = request.args.get('rangeMinutes')
 
-    if timeRange is None:
-        timeRange = 30
+    if timeRangeDays is None:
+        timeRangeDays = 1
+    if timeRangeHours is None:
+        timeRangeHours = 0
+    if timeRangeMinutes is None:
+        timeRangeMinutes = 0
 
-    if not str(timeRange).isnumeric():
-        timeRange = 30
+    if not str(timeRangeDays).isnumeric():
+        timeRangeDays = 1
+    if not str(timeRangeHours).isnumeric():
+        timeRangeHours = 0
+    if not str(timeRangeMinutes).isnumeric():
+        timeRangeMinutes = 0
 
-    command = 'SELECT cpu, disk, ram FROM piSystemUsage WHERE time > now() - ' + str(timeRange) + 'd'
+    command = 'SELECT cpu, disk, ram FROM piSystemUsage WHERE time > now() - ' + str(timeRangeDays) + 'd - ' \
+              + str(timeRangeHours) + 'h - ' + str(timeRangeMinutes) + 'm'
+
     print(command)
     data = db.query(command)
     usageData = []
@@ -72,15 +84,27 @@ def recentMessages():
 # @app.route('/ select * from micanglearrival')
 @app.route('/micAngleArrival')
 def micAngleArrival():
-    timeRange = request.args.get('range')
+    timeRangeDays = request.args.get('rangeDays')
+    timeRangeHours = request.args.get('rangeHours')
+    timeRangeMinutes = request.args.get('rangeMinutes')
 
-    if timeRange is None:
-        timeRange = 1
+    if timeRangeDays is None:
+        timeRangeDays = 1
+    if timeRangeHours is None:
+        timeRangeHours = 0
+    if timeRangeMinutes is None:
+        timeRangeMinutes = 0
 
-    if not str(timeRange).isnumeric():
-        timeRange = 1
+    if not str(timeRangeDays).isnumeric():
+        timeRangeDays = 1
+    if not str(timeRangeHours).isnumeric():
+        timeRangeHours = 0
+    if not str(timeRangeMinutes).isnumeric():
+        timeRangeMinutes = 0
 
-    command = 'SELECT mic_direction_of_arrival from micanglearrival WHERE time > now() - ' + str(timeRange) + 'd'
+    command = 'SELECT mic_direction_of_arrival from micanglearrival WHERE time > now() - ' + str(timeRangeDays) + 'd - ' \
+              + str(timeRangeHours) + 'h - ' + str(timeRangeMinutes) + 'm'
+    print(command)
     data = db.query(command)
     for items in data:
         dataPoint = {

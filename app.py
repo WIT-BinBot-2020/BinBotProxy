@@ -84,7 +84,7 @@ def recentMessages():
 
 @app.route('/micKeyword')
 def micKeyword():
-        
+       pass
 
 @app.route('/micAngleArrival')
 def micAngleArrival():

@@ -81,7 +81,11 @@ def recentMessages():
 
     return make_response(jsonify(messageData))
 
-# @app.route('/ select * from micanglearrival')
+
+@app.route('/micKeyword')
+def micKeyword():
+        
+
 @app.route('/micAngleArrival')
 def micAngleArrival():
     timeRangeDays = request.args.get('rangeDays')
@@ -113,6 +117,27 @@ def micAngleArrival():
         return make_response(jsonify(dataPoint))
 
     return "Empty List"
+
+
+@app.route('/commandFrequency')
+def commandFrequency():
+
+    command = 'SELECT distinct(command) from commands'
+    data = db.query(command)
+    commandData = []
+    for items in data:
+        for item in items:
+            command = "SELECT COUNT(command) from commands where command = '" + item["distinct"] + "'"
+            counts = db.query(command)
+            for count in counts:
+                thisCount = {
+                    "Command": item["distinct"],
+                    "Count" : count[0]["count"]
+                }
+                commandData.append(thisCount)
+
+    return make_response(jsonify(commandData))
+
 
 if __name__ == '__main__':
         app.run(host="0.0.0.0",debug=True)

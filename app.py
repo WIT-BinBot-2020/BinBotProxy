@@ -84,7 +84,21 @@ def recentMessages():
 
 @app.route('/micKeyword')
 def micKeyword():
-       pass
+    command = 'SELECT distinct(mic_keyword) from micKeyword'
+    data = db.query(command)
+    commandData = []
+    for items in data:
+        for item in items:
+            command = "SELECT COUNT(mic_keyword) from micKeyword where mic_keyword = '" + item["distinct"] + "'"
+            counts = db.query(command)
+            for count in counts:
+                thisCount = {
+                    "KeyWord": item["distinct"],
+                    "Count": count[0]["count"]
+                }
+                commandData.append(thisCount)
+
+    return make_response(jsonify(commandData))
 
 @app.route('/micAngleArrival')
 def micAngleArrival():

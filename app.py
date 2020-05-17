@@ -152,6 +152,25 @@ def commandFrequency():
 
     return make_response(jsonify(commandData))
 
+@app.route('/soundFrequency')
+def soundFrequency():
+
+    command = 'SELECT distinct(sound_played) from soundPlayed'
+    data = db.query(command)
+    commandData = []
+    for items in data:
+        for item in items:
+            command = "SELECT COUNT(sound_played) from soundPlayed where sound_played = " + str(item["distinct"])
+            counts = db.query(command)
+            for count in counts:
+                thisCount = {
+                    "Sound": item["distinct"],
+                    "Count" : count[0]["count"]
+                }
+                commandData.append(thisCount)
+
+    return make_response(jsonify(commandData))
+
 
 if __name__ == '__main__':
         app.run(host="0.0.0.0",debug=True)

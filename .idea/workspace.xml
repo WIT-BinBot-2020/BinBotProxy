@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cd316a7-f2cf-4792-8d51-d09fde35453e" name="Default Changelist" comment="" />
+    <list default="true" id="6cd316a7-f2cf-4792-8d51-d09fde35453e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +79,8 @@
       <workItem from="1588839582726" duration="26000" />
       <workItem from="1589462186771" duration="2431000" />
       <workItem from="1589571386070" duration="3683000" />
-      <workItem from="1589621468721" duration="5639000" />
+      <workItem from="1589621468721" duration="6894000" />
+      <workItem from="1589731591083" duration="202000" />
     </task>
     <servers />
   </component>
@@ -96,22 +100,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588839606292" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1589652121323">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1589731850296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589652121323" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1589652121322">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589731850296" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1589731850295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589652121322" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1589652121322">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589731850295" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1589731850295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589652121322" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1589652121322">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589731850295" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1589731850296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589652121322" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589731850296" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1589573157770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,7 +123,7 @@
     <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589571580502" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BinBotProxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1589652121306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/BinBotProxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1589731850283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/binbotproxy$binbotproxy.coverage" NAME="binbotproxy Coverage Results" MODIFIED="1589464607586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
